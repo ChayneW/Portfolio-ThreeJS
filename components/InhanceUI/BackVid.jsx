@@ -4,7 +4,7 @@ import React, { useState, useRef, Suspense } from 'react';
 const heroVids = [
     '/videos/trippy.mp4',
     '/videos/circular_data.mp4',
-    'videos/cube.mp4',
+    '/videos/cube.mp4',
     '/videos/cyberpunk.mp4',
     '/videos/google_trans.mp4',
     '/videos/stack_visual.mp4',
