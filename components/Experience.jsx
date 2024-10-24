@@ -8,7 +8,7 @@ import { VelocityText } from './InhanceUI/TextSide'
 
 const Experience = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-black text-white'>
       <div className=''>
         <h1>Experience</h1>
         {/* <MultiLayerParallax/> */}

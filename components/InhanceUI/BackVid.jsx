@@ -19,6 +19,7 @@ const BackVid = () => {
     const handleVideoEnd = () => {
         console.log(`inside handleVideoEnd, current is ${currentVideoIndex}`);
         setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % heroVids.length);
+        console.log(`switching to next video: ${currentVideoIndex}`)
     }
 
     const handleVideoError = () => {
@@ -51,7 +52,7 @@ const BackVid = () => {
                     {/* <div className='absolute inset-0 bg-gradient-to-b from-transparent to-[#171717] w-full h-full'></div> */}
                     
                     {/* Optional additional overlay for opacity */}
-                    <div className='absolute inset-0 bg-black opacity-30 w-full h-full'></div>
+                    <div className='absolute inset-0 bg-black opacity-20 w-full h-full'></div>
                 </div>
             </Suspense>
         </div>

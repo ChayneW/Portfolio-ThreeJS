@@ -24,11 +24,15 @@ const Hero = ({scrollContainer}) => {
         }}
       > */}
 
-      <div id="hero" className='max-lg:h-[40vh] lg:h-screen'>
+      {/* <div id="hero" className='max-lg:h-[40vh] lg:h-screen'> */}
+      <div id="hero" className='h-screen'>
         <BackVid/>
 
-        <div className="relative max-lg:h-[40vh] lg:h-full">
-          <div className="absolute top-1/4 left-20">
+        {/* <div className="relative max-lg:h-[40vh] lg:h-full"> */}
+        <div className="relative h-full">
+          <div className="absolute
+            max-md:top-1/2 max-md:left-1/2 max-md:transform max-md:-translate-x-1/2 max-md:-translate-y-1/2
+            md:top-1/4 md:left-20">
             <FlipLink href="#">CHAYNE.DEV</FlipLink>
             {/* <FlipLinkAuto href="#">CHAYNE.DEV</FlipLinkAuto> */}
             <FlipLinkAuto textArray={jobs} />
