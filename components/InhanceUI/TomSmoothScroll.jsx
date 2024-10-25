@@ -91,8 +91,12 @@ const CenterImage = () => {
         clipPath,
         backgroundSize,
         opacity,
+        // backgroundImage:
+        //   "url(https://images.unsplash.com/photo-1460186136353-977e9d6085a1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+        // backgroundImage:
+        //   "url(/photos/alex-knight.jpg)",
         backgroundImage:
-          "url(https://images.unsplash.com/photo-1460186136353-977e9d6085a1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+          "url(/photos/neon-store.jpg)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
@@ -104,28 +108,33 @@ const ParallaxImages = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 pt-[200px]">
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        // src="https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="/photos/rainy-day.jpg"
         alt="And example of a space launch"
         start={-200}
         end={200}
         className="w-1/3"
       />
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        // src="https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        // src="/photos/cash-macanaya-ndtVFSIu68I-unsplash.jpg"
+        src="/photos/moujib.jpg"
         alt="An example of a space launch"
         start={200}
         end={-250}
-        className="mx-auto w-2/3"
+        className="mx-auto w-2/3 h-1/3"
       />
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        // src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="/photos/fukayamamo.jpg"
         alt="Orbiting satellite"
         start={-200}
         end={200}
         className="ml-auto w-1/3"
       />
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1494022299300-899b96e49893?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        // src="https://images.unsplash.com/photo-1494022299300-899b96e49893?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="/photos/michael-demarco-original.jpg"
         alt="Orbiting satellite"
         start={0}
         end={-500}
@@ -163,30 +172,53 @@ const ParallaxImg = ({ className, alt, src, start, end }) => {
 const Schedule = () => {
   return (
     <section
-      id="launch-schedule"
-      className="mx-auto max-w-5xl px-4 py-48 text-white"
+      id=""
+      // className="mx-auto max-w-5xl px-4 py-28 text-white"
+      className="mx-auto max-w-8xl px-4 py-[100px] text-white"
     >
       <motion.h1
         initial={{ y: 48, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.75 }}
         // className="mb-20 text-4xl font-black uppercase text-zinc-50"
-        className="mb-20 px-10 text-4xl text-zinc-50
+        className="mb-20 px-10 pt-[200px] text-4xl text-zinc-50
         max-md:text-4xl md:max-lg:text-4xl 
-        lg:text-5xl
+        lg:text-7xl
         "
       >
         Whether in Florida or elsewhere, I am crafting
           digital experiences and innovative web/software development solutions for
           brands, companies and your next big idea.
       </motion.h1>
-      <ScheduleItem title="NG-21" date="Dec 9th" location="Florida" />
+
+      <motion.div
+        initial={{ y: 48, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.75 }}
+        className="mb-9 flex items-center justify-between border-zinc-800 px-3 pb-9"
+      >
+        {/* <hr></hr> */}
+        <div className="flex w-full justify-between border-t">
+          
+          <div>
+            <h1>Frontend</h1>
+          </div>
+
+          <div>
+            <h1>Backend</h1>
+          </div>  
+
+        </div>
+
+      </motion.div>
+
+      {/* <ScheduleItem title="NG-21" date="Dec 9th" location="Florida" />
       <ScheduleItem title="Starlink" date="Dec 20th" location="Texas" />
       <ScheduleItem title="Starlink" date="Jan 13th" location="Florida" />
       <ScheduleItem title="Turksat 6A" date="Feb 22nd" location="Florida" />
       <ScheduleItem title="NROL-186" date="Mar 1st" location="California" />
       <ScheduleItem title="GOES-U" date="Mar 8th" location="California" />
-      <ScheduleItem title="ASTRA 1P" date="Apr 8th" location="Texas" />
+      <ScheduleItem title="ASTRA 1P" date="Apr 8th" location="Texas" /> */}
     </section>
   );
 };

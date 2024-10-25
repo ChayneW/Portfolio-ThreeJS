@@ -5,9 +5,11 @@ import { SmoothScrollHero } from './InhanceUI/TomSmoothScroll'
 
 const About = () => {
   return (
-    <>
-      <SmoothScrollHero/>
-      <section className='py-[200px] text-black bg-[#e0e0dc]'>
+    <section className=''>
+      <div className=''>
+        <SmoothScrollHero/>
+      </div>
+      <div className='py-[200px] text-black bg-[#e0e0dc]'>
         <h1 className='px-10
           max-md:text-4xl md:max-lg:text-6xl 
           lg:text-8xl'
@@ -17,8 +19,8 @@ const About = () => {
           brands, companies and your next big idea.
         </h1>
 
-      </section>
-    </>
+      </div>
+    </section>
   )
 }
 
