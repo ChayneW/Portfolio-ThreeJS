@@ -61,7 +61,8 @@ const Hero = () => {
 
       <ParallaxImages />
 
-      <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-950/0 to-zinc-950" />
+      {/* <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-950/0 to-zinc-950" /> */}
+      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-zinc-950/0 to-zinc-950" />
     </div>
   );
 };
@@ -87,6 +88,7 @@ const CenterImage = () => {
 
   return (
     <motion.div
+      // className="sticky top-0 h-screen w-full"
       className="sticky top-0 h-screen w-full"
       style={{
         clipPath,
@@ -107,7 +109,7 @@ const CenterImage = () => {
 
 const ParallaxImages = () => {
   return (
-    <div className="mx-auto max-w-5xl px-4 pt-[200px]">
+    <div className="mx-auto max-w-5xl px-4 md:pt-[200px]">
       <ParallaxImg
         // src="https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         // src="/photos/rainy-day.jpg"
@@ -141,7 +143,7 @@ const ParallaxImages = () => {
         alt="Orbiting satellite"
         start={0}
         end={-500}
-        className="ml-24 w-5/12"
+        className="max-md:hidden md:block ml-24 w-5/12"
       />
     </div>
   );
@@ -184,14 +186,13 @@ const Schedule = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.75 }}
         // className="mb-20 text-4xl font-black uppercase text-zinc-50"
-        className="mb-20 px-10 pt-[200px] text-4xl text-zinc-50
+        className="mb-20 px-10 md:px-20 text-4xl text-zinc-50
         max-md:text-4xl md:max-lg:text-4xl 
-        lg:text-7xl
-        "
+        lg:text-7xl"
       >
         Whether in Florida or elsewhere, I am crafting
-          digital experiences and innovative web/software development solutions for
-          brands, companies and your next big idea.
+        digital experiences and innovative web/software development solutions for
+        brands, companies and your next big idea.
       </motion.h1>
 
       <motion.div
@@ -201,22 +202,37 @@ const Schedule = () => {
         className="mb-9 flex items-center justify-between border-zinc-800 px-3 pb-9"
       >
         
-        <div className="flex w-full justify-around border-t pt-10 py-10">
-          
-          <div>
-            <h1>Frontend</h1>
+        <div className="w-full border-t pt-10 py-10 px-10 md:px-20
+        grid md:grid-cols-3 self-center max-md:gap-10"
+        >
+          <div className="grid frontend-text items-center">
+            <h1 className="text-xl py-5">Frontend:</h1>
+            <h2>Framer Motion</h2>
+            <h2>Next.JS</h2>
+            <h2>GSAP</h2>
+            <h2>TailwindCSS</h2>
           </div>
 
-          <div>
-            <h1>Backend</h1>
+          <div className="grid frontend-text items-center">
+            <h1 className="text-xl py-5">Backend:</h1>
+            <h2>Express.JS</h2>
+            <h2>.NET 8</h2>
+            <h2>SQL</h2>
+            <h2>MongoDB</h2>
           </div> 
 
-          <div>
+          <div className="grid justify-center">
             <Image
-              className="rounded-2xl"
+              className="max-md:hidden md:block rounded-2xl"
               src={"/photos/logo/profile-pic.jpg"}
               width={200}
               height={200}
+            />
+            <Image
+              className="max-md:block md:hidden rounded-2xl"
+              src={"/photos/logo/profile-pic.jpg"}
+              width={150}
+              height={150}
             />
           </div> 
 

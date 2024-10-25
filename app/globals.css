@@ -120,3 +120,11 @@
 .spacer {
   height: 10px;
 }
+
+.frontend-text h1 {
+  font-size: 30px;
+}
+
+.frontend-text h2 {
+  font-size: 20px;
+}
