@@ -4,7 +4,7 @@ import Projects from './Projects'
 import ShuffleHero from './InhanceUI/ShuffleSkills'
 import { VelocityText } from './InhanceUI/TextSide'
 
-// https://kevinhilgendorf.com/#services
+// https://kevinhilgendorf.com
 
 const Experience = () => {
   return (

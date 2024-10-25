@@ -8,6 +8,7 @@ import {
 import { SiSpacex } from "react-icons/si";
 import { FiArrowRight, FiMapPin } from "react-icons/fi";
 import { useRef } from "react";
+import Image from "next/image";
 
 export const SmoothScrollHero = () => {
   return (
@@ -109,7 +110,8 @@ const ParallaxImages = () => {
     <div className="mx-auto max-w-5xl px-4 pt-[200px]">
       <ParallaxImg
         // src="https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        src="/photos/rainy-day.jpg"
+        // src="/photos/rainy-day.jpg"
+        src="/photos/moujib.jpg"
         alt="And example of a space launch"
         start={-200}
         end={200}
@@ -118,7 +120,8 @@ const ParallaxImages = () => {
       <ParallaxImg
         // src="https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         // src="/photos/cash-macanaya-ndtVFSIu68I-unsplash.jpg"
-        src="/photos/moujib.jpg"
+        
+        src="/photos/rainy-day.jpg"
         alt="An example of a space launch"
         start={200}
         end={-250}
@@ -197,8 +200,8 @@ const Schedule = () => {
         transition={{ ease: "easeInOut", duration: 0.75 }}
         className="mb-9 flex items-center justify-between border-zinc-800 px-3 pb-9"
       >
-        {/* <hr></hr> */}
-        <div className="flex w-full justify-between border-t">
+        
+        <div className="flex w-full justify-around border-t pt-10 py-10">
           
           <div>
             <h1>Frontend</h1>
@@ -206,7 +209,16 @@ const Schedule = () => {
 
           <div>
             <h1>Backend</h1>
-          </div>  
+          </div> 
+
+          <div>
+            <Image
+              className="rounded-2xl"
+              src={"/photos/logo/profile-pic.jpg"}
+              width={200}
+              height={200}
+            />
+          </div> 
 
         </div>
 
