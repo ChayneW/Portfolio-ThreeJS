@@ -155,7 +155,7 @@ const generateSquares = () => {
       key={sq.id}
       layout
       transition={{ duration: 1.5, type: "spring" }}
-      className="w-full h-full relative bg-zinc-600 rounded-lg"
+      className="w-full h-full relative rounded-lg"
       // style={{
       //   backgroundImage: `url(${sq.src})`,
       //   backgroundSize: "contain",

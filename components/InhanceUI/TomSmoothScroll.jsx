@@ -190,7 +190,7 @@ const Schedule = () => {
         max-md:text-4xl md:max-lg:text-4xl 
         lg:text-7xl"
       >
-        Whether in Florida or elsewhere, I am crafting
+        Whether in South Florida or elsewhere, I am crafting
         digital experiences and innovative web/software development solutions for
         brands, companies and your next big idea.
       </motion.h1>

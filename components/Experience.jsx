@@ -13,6 +13,13 @@ const Experience = () => {
       <div className=''>
         <h1>Experience</h1>
         {/* <MultiLayerParallax/> */}
+        <div className=' text-black bg-[#e0e0dc]'>
+          <h1 className='px-10
+            max-md:text-4xl md:max-lg:text-6xl 
+            lg:text-8xl'>My Works:</h1>
+        </div>
+        
+
         <ShuffleHero/>
         <VelocityText/>
       </div>
