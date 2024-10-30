@@ -86,34 +86,21 @@ export const FlipLink = ({ children, href }) => {
   );
 };
 
-
-// // // New component: FlipLinkAuto with auto-flipping every 3 seconds
-// export const FlipLinkAuto = ({ children, href }) => {
-//   const [flip, setFlip] = useState(false);
-
-//   // Use a timer to trigger automatic flip every 3 seconds
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setFlip((prev) => !prev);
-//     }, INTERVAL * 1000); // convert seconds to milliseconds
-
-//     return () => clearInterval(interval);
-//   }, []);
-
+// export const FlipLink = ({ children, href, fontSize }) => {
 //   return (
 //     <motion.a
 //       initial="initial"
-//       animate={flip ? "hovered" : "initial"}
+//       whileHover="hovered"
 //       href={href}
-//       className="relative block overflow-hidden whitespace-nowrap text-4xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl"
+//       className={`relative block overflow-hidden whitespace-nowrap font-black uppercase text-4xl sm:text-7xl md:text-8xl lg:${fontSize}`}
 //       style={{
+//         fontSize: fontSize,
 //         lineHeight: 0.75,
 //       }}
 //     >
 //       <div>
 //         {children.split("").map((l, i) => (
 //           <motion.span
-//             key={i}
 //             variants={{
 //               initial: { y: 0 },
 //               hovered: { y: "-100%" },
@@ -124,6 +111,7 @@ export const FlipLink = ({ children, href }) => {
 //               delay: STAGGER * i,
 //             }}
 //             className="inline-block"
+//             key={i}
 //           >
 //             {l}
 //           </motion.span>
@@ -132,7 +120,6 @@ export const FlipLink = ({ children, href }) => {
 //       <div className="absolute inset-0">
 //         {children.split("").map((l, i) => (
 //           <motion.span
-//             key={i}
 //             variants={{
 //               initial: { y: "100%" },
 //               hovered: { y: 0 },
@@ -143,6 +130,7 @@ export const FlipLink = ({ children, href }) => {
 //               delay: STAGGER * i,
 //             }}
 //             className="inline-block"
+//             key={i}
 //           >
 //             {l}
 //           </motion.span>
@@ -154,69 +142,6 @@ export const FlipLink = ({ children, href }) => {
 
 
 
-// export const FlipLinkAuto = ({ textArray }) => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length);
-//     }, CYCLE_INTERVAL);
-
-//     return () => clearInterval(interval); // Cleanup on unmount
-//   }, [textArray.length]);
-
-//   const currentText = textArray[currentIndex];
-
-//   return (
-//     <motion.div
-//       initial="initial"
-//       animate="animate"
-//       className="relative block overflow-hidden whitespace-nowrap text-4xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl"
-//       style={{
-//         lineHeight: 0.75,
-//       }}
-//     >
-//       <div>
-//         {currentText.split("").map((l, i) => (
-//           <motion.span
-//             variants={{
-//               initial: { y: 0 },
-//               animate: { y: "-100%" },
-//             }}
-//             transition={{
-//               duration: DURATION,
-//               ease: "easeInOut",
-//               delay: STAGGER * i,
-//             }}
-//             className="inline-block"
-//             key={i}
-//           >
-//             {l}
-//           </motion.span>
-//         ))}
-//       </div>
-//       <div className="absolute inset-0">
-//         {currentText.split("").map((l, i) => (
-//           <motion.span
-//             variants={{
-//               initial: { y: "100%" },
-//               animate: { y: 0 },
-//             }}
-//             transition={{
-//               duration: DURATION,
-//               ease: "easeInOut",
-//               delay: STAGGER * i,
-//             }}
-//             className="inline-block"
-//             key={i}
-//           >
-//             {l}
-//           </motion.span>
-//         ))}
-//       </div>
-//     </motion.div>
-//   );
-// };
 
 
 export const FlipLinkAuto = ({ textArray }) => {
@@ -291,5 +216,65 @@ export const FlipLinkAuto = ({ textArray }) => {
         </motion.div>
       </AnimatePresence>
     </div>
+  );
+};
+
+
+
+// import React, { useState, useEffect } from "react";
+// import { motion } from "framer-motion";
+
+// const DURATION = 0.25;
+// const INTERVAL = 3000; // Adjust cycle interval as needed
+
+
+export const PageDroppingText = ({ fontSize, children }) => {
+  const DURATION = 0.25;
+  return (
+    <motion.div
+      initial="initial"
+      whileHover="hovered"
+      // className={`relative block overflow-hidden whitespace-nowrap
+      // ${fontSize[0]} sm:${fontSize[1]} md:${fontSize[2]}`}
+      className={`relative block overflow-hidden whitespace-nowrap
+      ${fontSize[0]} sm:${fontSize[1]} md:${fontSize[2]}`}
+      style={{
+        lineHeight: 1,
+      }}
+    >
+      {/* Top layer for hover-up effect */}
+      <div className="absolute inset-0">
+        <motion.div
+          variants={{
+            initial: { y: 0 },
+            hovered: { y: "-100%" },
+          }}
+          transition={{
+            duration: DURATION,
+            ease: "easeInOut",
+          }}
+          className="inline-block"
+        >
+          {children}
+        </motion.div>
+      </div>
+
+      {/* Bottom layer for hover-down effect */}
+      <div>
+        <motion.div
+          variants={{
+            initial: { y: "100%" },
+            hovered: { y: 0 },
+          }}
+          transition={{
+            duration: DURATION,
+            ease: "easeInOut",
+          }}
+          className="inline-block"
+        >
+          {children}
+        </motion.div>
+      </div>
+    </motion.div>
   );
 };

@@ -203,7 +203,7 @@ const Schedule = () => {
       >
         
         <div className="w-full border-t pt-10 py-10 px-10 md:px-20
-        grid md:grid-cols-3 self-center max-md:gap-10"
+          grid md:grid-cols-3 self-center max-md:gap-10"
         >
           <div className="grid frontend-text items-center">
             <h1 className="text-xl py-5">Frontend:</h1>
