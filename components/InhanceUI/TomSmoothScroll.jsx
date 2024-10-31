@@ -9,6 +9,7 @@ import { SiSpacex } from "react-icons/si";
 import { FiArrowRight, FiMapPin } from "react-icons/fi";
 import { useRef } from "react";
 import Image from "next/image";
+import MotionElement from "./MotionElement";
 
 export const SmoothScrollHero = () => {
   return (
@@ -181,7 +182,7 @@ const Schedule = () => {
       // className="mx-auto max-w-5xl px-4 py-28 text-white"
       className="mx-auto max-w-8xl px-4 py-[100px] text-white"
     >
-      <motion.h1
+      {/* <motion.h1
         initial={{ y: 48, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.75 }}
@@ -193,7 +194,21 @@ const Schedule = () => {
         Whether in South Florida or elsewhere, I am crafting
         digital experiences and innovative web/software development solutions for
         brands, companies and your next big idea.
-      </motion.h1>
+      </motion.h1> */}
+
+      <MotionElement
+        as="h1"
+        className="mb-20 px-10 md:px-20 text-4xl text-zinc-50 max-md:text-4xl md:max-lg:text-4xl lg:text-7xl"
+      >
+        Whether in South Florida or elsewhere, I am crafting digital experiences and innovative web/software development solutions for brands, companies, and your next big idea.
+      </MotionElement>
+
+      {/* <MotionElement
+        as="p"
+        className="mb-4 text-lg text-gray-300"
+      >
+        This is a sample paragraph that uses the same animation properties.
+      </MotionElement> */}
 
       <motion.div
         initial={{ y: 48, opacity: 0 }}
