@@ -16,7 +16,15 @@ const Projects = () => {
         <div className='py-20'>
             {/* <ProjectFocusCards/> */}
             {/* <FocusCards/> */}
-            <FocusCardsDemo/>
+            <div className='text-white'>
+                <h1 className='p-10
+                max-md:text-4xl md:max-lg:text-6xl lg:text-8xl'
+                >My Works:</h1>
+            </div>
+            
+            <div className='py-10'>
+                <FocusCardsDemo/>
+            </div>
         </div>
             
            
