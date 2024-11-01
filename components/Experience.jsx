@@ -43,7 +43,7 @@ const Experience = () => {
             {/* <MotionElement
               as="div"
               className='grid py-10 gap-10'>  */}
-            <div className='grid py-10 gap-10'>
+            <div className='grid py-40 gap-10'>
               
               <div className='grid border-b md:mx-20 border-b-black'>
                 <div className='experience-div max-lg:grid pb-5'>

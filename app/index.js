@@ -1,5 +1,32 @@
 export const projectsData = [
     {
+      title: "Notch Beatz",
+      description: "Music Producer website, using the artistic blend of Tailwind CSS and paired with GSAP/Framer, to bring an experience welcoming to all artists.",
+      tech: ["Next.JS", "Tailwind", "Framer Motion", "GSAP"],
+      projLink: "https://notch-beatz.vercel.app/",
+      images: "/projects/notch-beatz/main.png",
+      // images: "/projects/arcana/main.png",
+      video: "/notch-beatz/video/",
+    },
+    {
+      title: "A-1 Property Management Solutions",
+      description: "A Comprehensive website using NEXT.JS for a startup HOA company management for apartments in South Florida.",
+      tech: ["Next.JS", "Tailwind", "Framer Motion"],
+      projLink: "https://www.a-1propertymanagementsolutions.com/",
+      images: "/projects/a-1/main.png",
+      // images: "/projects/arcana/main.png",
+      video: "/jetset/video/",
+    },
+    {
+      title: "JetSet - Tourism Trends",
+      description: "Gaming dashboard modeled after RAWG.io, utilizing a Next.js frontend and railway cloud self hosted .NET 8 backend integrated API calls to deserialize game data, streamlining user interaction with a seamless full-stack architecture.",
+      tech: ["Next.JS", "Tailwind", "Framer Motion"],
+      projLink: "https://gamevault-ten.vercel.app/",
+      images: "/projects/gamevault/main.png",
+      // images: "/projects/arcana/main.png",
+      video: "/jetset/video/",
+    },
+    {
       title: "Arcana Anime News",
       description: "Anime Newspaper events in history",
       tech: ["Next.JS", "Framer Motion", "Tailwind"],
@@ -52,7 +79,7 @@ export const projectsData = [
       images: "/projects/jetset/main.png",
       // images: "/projects/arcana/main.png",
       video: "/jetset/video/",
-    }
+    },
   ];
   
 
