@@ -75,7 +75,7 @@ const Navbar = () => {
           {/* Navbar for screen sizes max-lg */}
           <motion.div
             // className={`max-lg:fixed lg:hidden top-0 z-20 w-full text-white transition-colors duration-300 ${isScrolled ? 'bg-emerald-600' : 'bg-transparent'}`}
-            className={`max-lg:fixed lg:hidden top-0 z-20 w-full text-white transition-colors duration-300 ${isOpen || isScrolled ? 'bg-emerald-600' : 'bg-transparent'}`}
+            className={`max-lg:fixed lg:hidden top-0 z-20 w-full text-white transition-colors duration-300 ${isOpen || isScrolled ? 'bg-black' : 'bg-transparent'}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >

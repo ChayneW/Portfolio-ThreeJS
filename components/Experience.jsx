@@ -119,7 +119,7 @@ const Experience = () => {
 
           <ShuffleHero/>
         </div>
-        {/* <VelocityText/> */}
+        <VelocityText/>
       </div>
     </MotionElement>
   )
