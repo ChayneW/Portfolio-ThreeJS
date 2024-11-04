@@ -8,26 +8,28 @@ import {ReactLenis} from "lenis/react"
 import { FocusCards } from './ui/focus-cards'
 import { FocusCardsDemo } from './InhanceUI/CardDemo'
 // import ProjectFocusCards from "../components/InhanceUI/ProjectFocusCards"
+import MotionElement from './InhanceUI/MotionElement'
 
 const Projects = () => {
-    
 
     return (
-        <div className='py-20'>
-            {/* <ProjectFocusCards/> */}
-            {/* <FocusCards/> */}
-            <div className='text-white'>
-                <h1 className='p-10
-                max-md:text-4xl md:max-lg:text-6xl lg:text-8xl'
-                >My Works:</h1>
-            </div>
-            
-            <div className='py-10'>
-                <FocusCardsDemo/>
-            </div>
+        <MotionElement
+            as="div"
+            className='py-20'
+        >
+        {/* // <div className='py-20'> */}
+        {/* <ProjectFocusCards/> */}
+        {/* <FocusCards/> */}
+        <div className='text-white'>
+            <h1 className='p-10
+            max-md:text-4xl md:max-lg:text-6xl lg:text-8xl'
+            >My Works:</h1>
         </div>
-            
-           
+        
+        <div className='py-10'>
+            <FocusCardsDemo/>
+        </div>
+    </MotionElement>
     )
 }
 

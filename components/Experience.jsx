@@ -5,6 +5,8 @@ import ShuffleHero from './InhanceUI/ShuffleSkills'
 import { VelocityText } from './InhanceUI/TextSide'
 import { FlipLink, PageDroppingText } from './InhanceUI/DroppingText'
 import MotionElement from './InhanceUI/MotionElement'
+import { TypewriterEffectSmoothDemo } from './InhanceUI/TypeWriter'
+// import { TypewriterEffectDemo } from './InhanceUI/TypeWriterEffect'
 
 // https://kevinhilgendorf.com
 
@@ -43,7 +45,7 @@ const Experience = () => {
             {/* <MotionElement
               as="div"
               className='grid py-10 gap-10'>  */}
-            <div className='grid py-40 gap-10'>
+            <div className='grid max-md:py-20 md:py-32 gap-20'>
               
               <div className='grid border-b md:mx-20 border-b-black'>
                 <div className='experience-div max-lg:grid pb-5'>
@@ -101,19 +103,23 @@ const Experience = () => {
             </div>
           </div>
 
-          <div className='text-black'>
-              <p className='max-md:p-10 md:p-20 max-md:text-2xl md:text-4xl'>
-                Translating design into dynamic, functional web experiences is where I thrive. 
-                I&apos;m passionate about transforming design systems into responsive, 
-                web-based environments, leveraging the flexibility of multiple different technologies 
-                to create sustainable websites with flexible and responsive components.
-              </p>
-            </div>
+          {/* <div className='text-black'>
+            <p className='max-md:p-10 md:p-20 max-md:text-2xl md:text-4xl'>
+              Translating design into dynamic, functional web experiences is where I thrive. 
+              I&apos;m passionate about transforming design systems into responsive, 
+              web-based environments, leveraging the flexibility of multiple different technologies 
+              to create sustainable websites with flexible and responsive components.
+            </p>
+          </div> */}
+          
+          <div>
+            <TypewriterEffectSmoothDemo/>
+          </div>
           
 
           <ShuffleHero/>
         </div>
-        <VelocityText/>
+        {/* <VelocityText/> */}
       </div>
     </MotionElement>
   )

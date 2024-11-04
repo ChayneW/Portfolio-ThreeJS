@@ -82,27 +82,3 @@ export const projectsData = [
     },
   ];
   
-
-// app/index.js or any other component
-// import {
-//   chat,
-//   cypress,
-//   firebase,
-//   framer,
-//   jest,
-//   flask,
-//   selenium,
-//   next,
-//   github,
-// } from '../public/skills-folder';  // Automatically looks for index.js
-
-// export const imgContainer = [
-//   { app: 'chatgpt', img: chat },
-//   { app: 'cypress', img: cypress },
-//   { app: 'firebase', img: firebase },
-//   { app: 'framer', img: framer },
-//   { app: 'jest', img: jest },
-//   { app: 'flask', img: flask },
-//   { app: 'selenium', img: selenium },
-//   { app: 'next', img: next },
-// ];
