@@ -27,7 +27,8 @@ export const Card = React.memo(({
         // src={'projects'}
         alt={card.title}
         fill
-        className="object-cover absolute inset-0" 
+        className="object-cover absolute inset-0"
+        priority 
       />
       {/* <video 
         // ref={videoRef}

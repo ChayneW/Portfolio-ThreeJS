@@ -130,27 +130,25 @@ const My3DModel = ({rotationY}) => {
 
 const My3DCanvas = () => {
   return (
-    <div className='h-[100vh] w-[100vw]'>
-        <Canvas
-            // style={{ width: "100vw", height: "100vh" }}
-            camera={{ position: [0, 0, 40], far: 1000 }}
-        >
+    // <div className='h-[100vh] w-[100vw]'>
+    //     <Canvas
+    //         camera={{ position: [0, 0, 40], far: 1000 }}
+    //     >
+    //     <Suspense fallback={null}>
+    //         <ambientLight intensity={0.5} />
+    //         <directionalLight position={[5, 5, 5]} intensity={1} />
+    //         <My3DModel rotationY={0} />
+    //     </Suspense>
+    //     </Canvas>
+    // </div>
+    <div className='mx-auto max-md:ml-24 h-[400px] max-md:w-[300px] md:w-[400px] rounded-lg'>
+      <Canvas camera={{ position: [0, 0, 20], far: 1000 }}>
         <Suspense fallback={null}>
-            {/* Basic lighting setup */}
-            <ambientLight intensity={0.5} />
-            <directionalLight position={[5, 5, 5]} intensity={1} />
-
-            {/* The 3D Model */}
-            {/* First Mask (default orientation) */}
-            <My3DModel rotationY={0} />
-
-            {/* Second Mask (rotated 180 degrees, back to back) */}
-            {/* <My3DModel position={[4, 0, 0]} rotationY={Math.PI} /> 180 degrees = π radians */}
-            
-            {/* Camera controls to help explore the model */}
-            {/* <OrbitControls /> */}
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[5, 5, 5]} intensity={1} />
+          <My3DModel rotationY={0} />
         </Suspense>
-        </Canvas>
+      </Canvas>
     </div>
   );
 };

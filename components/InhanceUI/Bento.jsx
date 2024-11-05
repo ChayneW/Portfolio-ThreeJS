@@ -1,30 +1,52 @@
 "use client"
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
+import My3DCanvas from "./Spaceman";
 // import { SiGithub, SiTiktok, SiTwitter, SiYoutube } from "react-icons/si";
+
 
 export const RevealBento = () => {
   return (
-    <div className="min-h-screen  px-4 py-12 text-zinc-50">
-      <Logo />
-      <div
-        initial="initial"
-        animate="animate"
-        transition={{
-          staggerChildren: 0.05,
-        }}
-        className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4"
-      >
-        <HeaderBlock />
-        <SocialsBlock />
-        <AboutBlock />
-        <LocationBlock />
-        <EmailListBlock />
-      </div>
-      <Footer />
-    </div>
+    // <div className="min-h-screen px-4 py-12 text-zinc-50">
+    //   <Logo />
+    //   <div
+    //     initial="initial"
+    //     animate="animate"
+    //     transition={{
+    //       staggerChildren: 0.05,
+    //     }}
+    //     className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4"
+    //   >
+    //     <HeaderBlock />
+    //     <SocialsBlock />
+    //     <AboutBlock />
+    //   </div>
+    //   <Footer />
+    // </div>
+
+    // <div className="min-h-screen px-4 py-12 text-zinc-50">
+    //   <Logo />
+    //   <div className="relative mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4">
+    //     <HeaderBlock />
+    //     <div className="flex justify-center px-auto w-[400px] h-[500px]">
+    //       <My3DCanvas /> {/* Replacing SocialsBlock with 3D Canvas */}
+    //     </div>
+    //     <AboutBlock />
+    //   </div>
+    //   <Footer />
+    // </div>
+
+ <div className="min-h-screen px-4 py-12 text-zinc-50 grid lg:flex lg:flex-col items-center">
+<Logo />
+<div className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4">
+  <HeaderBlock />
+    <My3DCanvas /> 
+  <AboutBlock />
+</div>
+</div> 
   );
 };
 
@@ -60,13 +82,20 @@ const Block = ({ className, ...rest }) => {
 
 const HeaderBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6">
-    <img
+    {/* <img
       src="https://api.dicebear.com/8.x/lorelei-neutral/svg?seed=John"
       alt="avatar"
       className="mb-4 size-14 rounded-full"
+    /> */}
+
+    <Image
+      className="mb-4 size-14 rounded-full"
+      src={"/photos/logo/profile-pic.jpg"}
+      width={50}
+      height={50}
     />
     <h1 className="mb-12 text-4xl font-medium leading-tight">
-      Hi, I'm Tom.{" "}
+      Hi, I'm Chayne.{" "}
       <span className="text-zinc-400">
         I build cool websites like this one.
       </span>
@@ -153,6 +182,18 @@ const AboutBlock = () => (
     </p>
   </Block>
 );
+const DescBlock = () => (
+  <Block className="col-span-12 text-3xl leading-snug">
+    <p>
+      My passion is building cool stuff.{" "}
+      <span className="text-zinc-400">
+        I build primarily with React, Tailwind CSS, and Framer Motion. I love
+        this stack so much that I even built a website about it. I've made over
+        a hundred videos on the subject across YouTube and TikTok.
+      </span>
+    </p>
+  </Block>
+);
 
 const LocationBlock = () => (
   <Block className="col-span-12 flex flex-col items-center gap-4 md:col-span-3">
@@ -217,3 +258,5 @@ const Footer = () => {
     </footer>
   );
 };
+
+
