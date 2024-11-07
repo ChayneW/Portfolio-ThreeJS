@@ -141,7 +141,7 @@ const My3DCanvas = () => {
     //     </Suspense>
     //     </Canvas>
     // </div>
-    <div className='mx-auto max-md:ml-24 h-[400px] max-md:w-[300px] md:w-[400px] rounded-lg'>
+    <div className='mx-auto sm:max-md:ml-24 h-[400px] max-md:w-[300px] md:w-[400px] rounded-lg'>
       <Canvas camera={{ position: [0, 0, 20], far: 1000 }}>
         <Suspense fallback={null}>
           <ambientLight intensity={0.5} />
