@@ -112,7 +112,7 @@ const Experience = () => {
             </p>
           </div> */}
           
-          <div>
+          <div className='max-md:hidden md:block'>
             <TypewriterEffectSmoothDemo/>
           </div>
           

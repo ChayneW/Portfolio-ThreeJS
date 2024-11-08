@@ -70,7 +70,7 @@ export function TypewriterEffectSmoothDemo() {
   // console.log(words)
 
   return (
-    (<div className="flex flex-col items-center 
+    (<div className="flex flex-col items-center w-full px-auto
       justify-center max-md:h-[200px] md:h-[30rem]"
       >
       {/* <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">

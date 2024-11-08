@@ -40,12 +40,12 @@ export const RevealBento = () => {
     // </div>
 
  <div className="min-h-screen px-4 py-12 text-zinc-50 grid lg:flex lg:flex-col items-center">
-<Logo />
-<div className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4">
-  <HeaderBlock />
-    {/* <My3DCanvas />  */}
-  <AboutBlock />
-</div>
+  <Logo />
+  <div className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4">
+    <HeaderBlock />
+      {/* <My3DCanvas />  */}
+    <AboutBlock />
+  </div>
 </div> 
   );
 };
