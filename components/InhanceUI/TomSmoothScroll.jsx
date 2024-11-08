@@ -216,60 +216,16 @@ const Schedule = () => {
         transition={{ ease: "easeInOut", duration: 0.75 }}
         className="mb-9 flex items-center border-t justify-between border-zinc-800 px-3 pb-9 pt-20"
       >
-        
-        {/* <div className="w-full border-t pt-10 py-10 px-10 md:px-20
-          grid md:grid-cols-3 self-center max-md:gap-10"
-        >
-          <div className="grid frontend-text">
-            <h1 className="text-xl">Frontend:</h1>
-            
-            <div className="grid">
-              <h2>Framer Motion</h2>
-              <h2>Next.JS</h2>
-              <h2>GSAP</h2>
-              <h2>TailwindCSS</h2>
-              <h2>Figma</h2>
-            </div>
-
-          </div>
-
-          <div className="grid frontend-text">
-            <h1 className="text-xl">Backend:</h1>
-            
-            <div className="grid">
-              <h2>Express.JS</h2>
-              <h2>.NET 8</h2>
-              <h2>SQL</h2>
-              <h2>RESTAPI</h2>
-              <h2>PostgreSQL</h2>
-            </div>
-          </div> 
-
-          <div className="grid justify-center">
-            <Image
-              className="max-md:hidden md:block rounded-2xl"
-              src={"/photos/logo/profile-pic.jpg"}
-              width={200}
-              height={200}
-            />
-            <Image
-              className="max-md:block md:hidden rounded-2xl"
-              src={"/photos/logo/profile-pic.jpg"}
-              width={150}
-              height={150}
-            />
-          </div> 
-        </div> */}
-
         <div className="w-full pt-30 py-10 px-10 md:px-20
           grid md:grid-cols-2 self-center max-md:gap-10"
         >
-          <div className="grid frontend-text items-center justify-between text-3xl">
-            <h2>Hello, My name is Chayne and I&apos;m a Python/Web Developer from South Florida.
+          <div className="grid frontend-text items-center justify-between text-xl">
+            <BubbleText/>
+            {/* <h2>Hello, My name is Chayne and I&apos;m a Python/Web Developer from South Florida.
               My passion is Web Development and help transform designs from extraordinary minds into real life!
               I&apos;m dedicated to crafting captivating online experiences that captivate users and elevate brands.
               Join me on a journey where innovation meets impact.
-            </h2>
+            </h2> */}
           </div> 
 
           <div className="grid justify-center">
@@ -287,6 +243,8 @@ const Schedule = () => {
             />
           </div> 
         </div>
+
+        {/* <BubbleText/> */}
 
       </motion.div>
 
@@ -318,5 +276,24 @@ const ScheduleItem = ({ title, date, location }) => {
         <FiMapPin />
       </div>
     </motion.div>
+  );
+};
+
+const BubbleText = () => {
+  return (
+    <h2 className="text-center text-5xl font-thin text-indigo-300" style={{fontSize: "2rem"}}>
+      {/* {"Bubbbbbbbble text".split("").map((child, idx) => (
+        <span className={"hoverText"} key={idx}>
+          {child}
+        </span>
+      ))} */}
+      {
+      `Hello, My name is Chayne and I'm a Python/Web Developer from South Florida. My passion is Web Development and help transform designs from extraordinary minds into real life! I'm dedicated to crafting captivating online experiences that captivate users and elevate brands.
+              Join me on a journey where innovation meets impact.`.split("").map((child, idx) => (
+        <span className={"hoverText"} key={idx}>
+          {child}
+        </span>
+      ))}
+    </h2>
   );
 };
