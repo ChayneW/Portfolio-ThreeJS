@@ -43,7 +43,9 @@ export const RevealBento = () => {
   <Logo />
   <div className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4">
     <HeaderBlock />
-    <My3DCanvas /> 
+    <div className="max-md:hidden md:block">
+      <My3DCanvas /> 
+    </div>
     <AboutBlock />
   </div>
 </div> 
