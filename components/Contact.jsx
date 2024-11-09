@@ -8,9 +8,10 @@ const Contact = () => {
     <div className=''>
         <div className='relative'>
           
-        <div>
-        <RevealBento/>
-        </div>
+          <div>
+            <RevealBento/>
+          </div>
+
         </div>
       </div>
   )

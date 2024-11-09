@@ -98,7 +98,7 @@ const Navbar = () => {
                   <Image
                     width={30}
                     height={30}
-                    src={isOpen ? '/close.svg' : '/hamburger-2.svg'}
+                    src={isOpen ? '/close-white.svg' : '/hamburger2-white.svg'}
                     alt='Toggle Menu'
                   />
                 </button>

@@ -43,7 +43,7 @@ export const RevealBento = () => {
   <Logo />
   <div className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4">
     <HeaderBlock />
-      {/* <My3DCanvas />  */}
+    <My3DCanvas /> 
     <AboutBlock />
   </div>
 </div> 
@@ -188,8 +188,7 @@ const DescBlock = () => (
       My passion is building cool stuff.{" "}
       <span className="text-zinc-400">
         I build primarily with React, Tailwind CSS, and Framer Motion. I love
-        this stack so much that I even built a website about it. I've made over
-        a hundred videos on the subject across YouTube and TikTok.
+        this stack so much that I even built a website about it.
       </span>
     </p>
   </Block>
