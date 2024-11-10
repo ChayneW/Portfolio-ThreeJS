@@ -47,18 +47,19 @@ export const Card = React.memo(({
 
 
       {/* Adjusted div for overlay behavior on small screens */}
-      {/* <div
+      <div
         className={cn(
           "absolute inset-0 flex items-end py-8 px-4 transition-opacity duration-300",
           hovered === index || "max-sm:opacity-60",  // Always have opacity on mobile
           "max-md:bg-black/50",     // Light overlay on small screens, darker on larger
           hovered === index && "opacity-100"  // Full opacity on hover for larger screens
-        )}> */}
-      <div
+        )}>
+          
+      {/* <div
         className={cn(
           "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",
           hovered === index ? "opacity-100" : "opacity-0"
-        )}>
+        )}> */}
 
         <div
           className="text-base sm:text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
