@@ -47,13 +47,21 @@ export const Card = React.memo(({
 
 
       {/* Adjusted div for overlay behavior on small screens */}
+      {/* <div
+        className={cn(
+          "absolute inset-0 flex items-end py-8 px-4 transition-opacity duration-300",
+          "bg-black/60 md:bg-black/50",  // Lighter overlay on mobile, darker on larger screens
+          hovered === index ? "opacity-100" : "md:opacity-0 max-sm:opacity-60"  // Hover reveals text on larger screens, keeps text on mobile
+        )}
+      > */}
+
       <div
         className={cn(
           "absolute inset-0 flex items-end py-8 px-4 transition-opacity duration-300",
-          hovered === index || "max-sm:opacity-60",  // Always have opacity on mobile
-          "max-md:bg-black/50",     // Light overlay on small screens, darker on larger
-          hovered === index && "opacity-100"  // Full opacity on hover for larger screens
-        )}>
+          "bg-[rgba(0,0,0,0.3)] md:bg-[rgba(0,0,0,0.5)]",  // Background transparency instead of opacity
+          hovered === index ? "opacity-100" : "md:opacity-0" // Hover reveals overlay on larger screens
+        )}
+      >
           
       {/* <div
         className={cn(
@@ -62,7 +70,13 @@ export const Card = React.memo(({
         )}> */}
 
         <div
-          className="text-base sm:text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+          // className="text-base sm:text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+          className={cn(
+            "text-base sm:text-xl md:text-2xl font-medium",
+            "text-white",                  // White text for all screens
+            "max-md:text-white"            // Ensures full white on smaller screens
+          )}
+        >
           {card.title}
         {/* <div
           className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
