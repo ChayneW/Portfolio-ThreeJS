@@ -44,12 +44,12 @@ export const RevealBento = () => {
   {/* <Logo /> */}
   {/* <CircleText/>*/}
 
-  <div className="py-10 w-full grid justify-center">
+  {/* <div className="py-10 w-full grid justify-center">
     <div 
       style={{ width: "200px", height: "200px"}}>
       <CircleText />
     </div>
-  </div>
+  </div> */}
 
   <div className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4">
     <HeaderBlock />
@@ -58,6 +58,14 @@ export const RevealBento = () => {
     </div>
     <AboutBlock />
   </div>
+
+  <div className="py-20 w-full grid justify-center">
+    <div 
+      style={{ width: "200px", height: "200px"}}>
+      <CircleText />
+    </div>
+  </div>
+
 </div> 
   );
 };
