@@ -65,7 +65,7 @@ export const RevealBento = () => {
       <CircleText />
     </div> */}
     <div>
-      <CircleText size={200} textSize={15} textContent="Chayne.Dev ✦ Chayne.Dev ✦" />
+      <CircleText size={200} textSize={14} textContent="Chayne.Dev ✦ Chayne.Dev ✦" />
     </div>
   </div>
 
