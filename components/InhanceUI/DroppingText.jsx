@@ -6,9 +6,9 @@ export const RevealLinks = () => {
   return (
     // <section className="grid place-content-center gap-2 bg-green-300 px-8 py-24 text-black">
     <section className="grid place-content-center gap-2 bg-[#e0e0dc] px-8 py-24 text-black">
-      <FlipLink href="#">Twitter</FlipLink>
-      <FlipLink href="#">Linkedin</FlipLink>
-      <FlipLink href="#">Facebook</FlipLink>
+      <FlipLink href="https://github.com/ChayneW">Github</FlipLink>
+      <FlipLink href="https://twitter.com/CswAutomation">Twitter</FlipLink>
+      <FlipLink href="https://www.linkedin.com/in/chayne-s-white/">Linkedin</FlipLink>
       <FlipLink href="#">Instagram</FlipLink>
     </section>
   );
@@ -27,6 +27,7 @@ export const FlipLink = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
+      target="_blank"
       className="relative block overflow-hidden whitespace-nowrap text-4xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl"
       style={{
         lineHeight: 0.75,

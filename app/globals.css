@@ -169,3 +169,85 @@
 .hoverText:has(+ .hoverText + .hoverText:hover) {
   font-weight: 300;
 }
+
+/* ################ */
+
+.circleContainer {
+  position: relative;
+  width: 250px; 
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotateText 10s linear infinite;
+}
+
+.centerImage {
+  position: absolute;
+  z-index: 1;
+}
+
+.circularText {
+  position: absolute;
+  font-size: 16px; 
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ################ */
+/* .circleContainer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: brightness(1.5) contrast(1.5);
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 0;
+  font-size: 1.2em;
+}
+
+.text span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 100px;
+} */

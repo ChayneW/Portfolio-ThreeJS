@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
 import My3DCanvas from "./Spaceman";
+import CircleText from "./CircleText";
 // import { SiGithub, SiTiktok, SiTwitter, SiYoutube } from "react-icons/si";
 
 
@@ -40,7 +41,16 @@ export const RevealBento = () => {
     // </div>
 
  <div className="min-h-screen px-4 py-12 text-zinc-50 grid lg:flex lg:flex-col items-center">
-  <Logo />
+  {/* <Logo /> */}
+  {/* <CircleText/>*/}
+
+  <div className="py-10 w-full grid justify-center">
+    <div 
+      style={{ width: "200px", height: "200px"}}>
+      <CircleText />
+    </div>
+  </div>
+
   <div className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4">
     <HeaderBlock />
     <div className="max-md:hidden md:block">

@@ -216,10 +216,10 @@ const Schedule = () => {
         transition={{ ease: "easeInOut", duration: 0.75 }}
         className="mb-9 flex items-center border-t justify-between border-zinc-800 px-3 pb-9 pt-20"
       >
-        <div className="w-full pt-30 py-10 px-10 md:px-20
-          grid md:grid-cols-2 self-center max-md:gap-10"
+        <div className="w-full pt-30 py-10 px-10 lg:px-20
+          grid lg:grid-cols-2 self-center max-md:gap-10"
         >
-          <div className="grid frontend-text items-center justify-between text-xl">
+          <div className="grid max-lg:order-last frontend-text items-center justify-between text-xl">
             <BubbleText/>
             {/* <h2>Hello, My name is Chayne and I&apos;m a Python/Web Developer from South Florida.
               My passion is Web Development and help transform designs from extraordinary minds into real life!
@@ -228,7 +228,7 @@ const Schedule = () => {
             </h2> */}
           </div> 
 
-          <div className="grid justify-center">
+          <div className="grid max-lg:order-first justify-center max-lg:pb-10">
             <Image
               className="max-md:hidden md:block rounded-2xl"
               src={"/photos/logo/profile-pic.jpg"}
