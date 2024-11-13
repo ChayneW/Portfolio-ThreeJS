@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MotionDiv, variants } from './InhanceUI/MotionDiv';
+import CircleText from './InhanceUI/CircleText';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +52,7 @@ const Navbar = () => {
           <div className={`max-lg:hidden lg:fixed top-0 w-full text-white transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
           {/* <div className={`max-lg:hidden lg:fixed top-0 z-20 w-full text-white transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}> */}
             <div className='flex justify-between p-2 px-5 py-8'>
-              <div className='flex self-center'>
+              {/* <div className='flex self-center'>
                 <Link href={'/'}>
                   <Image
                     width={100}
@@ -62,6 +63,15 @@ const Navbar = () => {
                     alt='Toggle Menu'
                   />
                 </Link>
+              </div> */}
+              <div className="flex self-center">
+                {/* <div 
+                  style={{ width: "30px", height: "30px"}}>
+                  <CircleText />
+                </div> */}
+                <div>
+                  <CircleText size={70} textSize={14} textContent=" ✦ Chayne.Dev ✦ Chayne.Dev ✦" />
+                </div>
               </div>
 
               <div className='flex justify-around gap-5 items-center'>
@@ -81,7 +91,7 @@ const Navbar = () => {
           >
             <div className='flex justify-between p-5'>
               <div className='flex self-center'>
-                <Link href={'/'}>
+                {/* <Link href={'/'}>
                   <Image
                     width={60}
                     height={60}
@@ -89,11 +99,14 @@ const Navbar = () => {
                     // src={'/notch-fix-3-color-speak.png'}
                     alt='Toggle Menu'
                   />
-                </Link>
+                </Link> */}
+                <div>
+                  <CircleText size={70} textSize={14} textContent=" ✦ Chayne.Dev ✦ Chayne.Dev ✦" />
+                </div>
               </div>
 
               {/* Hamburger Icon */}
-              <div className='lg:hidden'>
+              <div className='lg:hidden grid self-center'>
                 <button onClick={toggleMenu}>
                   <Image
                     width={30}

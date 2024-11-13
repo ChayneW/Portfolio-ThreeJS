@@ -60,9 +60,12 @@ export const RevealBento = () => {
   </div>
 
   <div className="py-20 w-full grid justify-center">
-    <div 
+    {/* <div 
       style={{ width: "200px", height: "200px"}}>
       <CircleText />
+    </div> */}
+    <div>
+      <CircleText size={200} textSize={15} textContent="Chayne.Dev ✦ Chayne.Dev ✦" />
     </div>
   </div>
 
