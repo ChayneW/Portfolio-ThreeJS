@@ -23,20 +23,7 @@ const Hero = ({scrollContainer}) => {
             {/* <FlipLinkAuto href="#">CHAYNE.DEV</FlipLinkAuto> */}
             <FlipLinkAuto textArray={jobs} />
           </div>
-
-          {/* <div className="absolute bottom-10 w-full">
-            <SideScrolling />
-          </div> */}
         </div>
-
-        {/* <div className='relative h-[300px]'>
-          <div className='absolute inset-0'>
-            <SpacemanCanvas/>
-
-          </div>
-
-        </div> */}
-
     </div>
   </div>
   )

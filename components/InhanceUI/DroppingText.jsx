@@ -52,6 +52,9 @@ export const FlipLink = ({ children, href }) => {
             }}
             className="inline-block"
             key={i}
+            style={{
+              textShadow: "0px 0px 2px #fff, 1px 1px 2px #fff", // White outline effect
+            }}
           >
             {l}
             </motion.span>
@@ -77,6 +80,9 @@ export const FlipLink = ({ children, href }) => {
             }}
             className="inline-block"
             key={i}
+            style={{
+              textShadow: "0px 0px 2px #fff, 5px 5px 6px #fff", // White outline effect
+            }}
           >
             {l}
           </motion.span>
@@ -87,63 +93,6 @@ export const FlipLink = ({ children, href }) => {
     // </a>
   );
 };
-
-// export const FlipLink = ({ children, href, fontSize }) => {
-//   return (
-//     <motion.a
-//       initial="initial"
-//       whileHover="hovered"
-//       href={href}
-//       className={`relative block overflow-hidden whitespace-nowrap font-black uppercase text-4xl sm:text-7xl md:text-8xl lg:${fontSize}`}
-//       style={{
-//         fontSize: fontSize,
-//         lineHeight: 0.75,
-//       }}
-//     >
-//       <div>
-//         {children.split("").map((l, i) => (
-//           <motion.span
-//             variants={{
-//               initial: { y: 0 },
-//               hovered: { y: "-100%" },
-//             }}
-//             transition={{
-//               duration: DURATION,
-//               ease: "easeInOut",
-//               delay: STAGGER * i,
-//             }}
-//             className="inline-block"
-//             key={i}
-//           >
-//             {l}
-//           </motion.span>
-//         ))}
-//       </div>
-//       <div className="absolute inset-0">
-//         {children.split("").map((l, i) => (
-//           <motion.span
-//             variants={{
-//               initial: { y: "100%" },
-//               hovered: { y: 0 },
-//             }}
-//             transition={{
-//               duration: DURATION,
-//               ease: "easeInOut",
-//               delay: STAGGER * i,
-//             }}
-//             className="inline-block"
-//             key={i}
-//           >
-//             {l}
-//           </motion.span>
-//         ))}
-//       </div>
-//     </motion.a>
-//   );
-// };
-
-
-
 
 
 export const FlipLinkAuto = ({ textArray }) => {

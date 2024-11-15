@@ -64,7 +64,7 @@ export const RevealBento = () => {
       style={{ width: "200px", height: "200px"}}>
       <CircleText />
     </div> */}
-    <div>
+    <div className="py-10">
       <CircleText size={200} textSize={14} textContent="Chayne.Dev ✦ Chayne.Dev ✦" />
     </div>
   </div>
