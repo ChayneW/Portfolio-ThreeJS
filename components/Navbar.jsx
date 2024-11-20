@@ -89,7 +89,7 @@ const Navbar = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
-            <div className='flex justify-between p-5'>
+            <div className='flex justify-between py-2 px-5'>
               <div className='flex self-center'>
                 {/* <Link href={'/'}>
                   <Image
