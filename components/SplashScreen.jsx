@@ -47,6 +47,8 @@ const SplashScreen = () => {
     updateCounter();
   }, []);
 
+//   https://codesandbox.io/p/sandbox/framer-motion-animate-content-bxx7lt?file=%2Fsrc%2FApp.tsx%3A10%2C32-10%2C37&from-embed
+
   if (!isVisible) return null; // Do not render the splash screen if it's not visible
 
   return (
@@ -59,7 +61,7 @@ const SplashScreen = () => {
             // src="/notch-fix.png"
             priority
             height={300}
-            width={420}
+            width={320}
             alt='banner'
           />
           <div className='counter text-4xl font-bold mb-4 py-10' style={{ color: counterColor }}>{count}</div>

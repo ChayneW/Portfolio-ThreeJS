@@ -71,18 +71,29 @@ export const Card = React.memo(({
 
         <div
           // className="text-base sm:text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
-          className={cn(
+          className={cn("text-contain",
             "text-base sm:text-xl md:text-2xl font-medium",
             "text-white",                  // White text for all screens
             "max-md:text-white"            // Ensures full white on smaller screens
           )}
         >
-          {card.title}
-        {/* <div
-          className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
-          {card.title} */}
+          <div>
+            {card.title}
+          </div>
+
           <br></br>
-          <p className="text-sm">{card.description}</p>
+
+          <div className="">
+            <div>
+              <h3>Tech:</h3>
+              <p className="text-sm">{card.tech}</p>
+            </div>
+            <br></br>
+            <div>
+              <p className="text-sm">{card.description}</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </Link>

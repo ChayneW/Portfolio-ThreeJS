@@ -2,7 +2,8 @@ export const projectsData = [
     {
       title: "Notch Beatz",
       description: "Music Producer website, using the artistic blend of Tailwind CSS and paired with GSAP/Framer, to bring an experience welcoming to all artists.",
-      tech: ["Next.JS", "Tailwind", "Framer Motion", "GSAP"],
+      // tech: ["Next.JS", "Tailwind", "Framer Motion", "GSAP"],
+      tech: "Next.JS, Tailwind, Framer-Motion, GSAP",
       projLink: "https://notch-beatz.vercel.app/",
       images: "/projects/notch-beatz/main.png",
       // images: "/projects/arcana/main.png",
@@ -11,7 +12,8 @@ export const projectsData = [
     {
       title: "A-1 Property Management Solutions",
       description: "A Comprehensive website using NEXT.JS for a startup HOA company management for apartments in South Florida.",
-      tech: ["Next.JS", "Tailwind", "Framer Motion"],
+      // tech: ["Next.JS", "Tailwind", "Framer Motion"],
+      tech: "Next.JS, Tailwind, Framer-Motion",
       projLink: "https://www.a-1propertymanagementsolutions.com/",
       images: "/projects/a-1/main.png",
       // images: "/projects/arcana/main.png",
@@ -20,7 +22,8 @@ export const projectsData = [
     {
       title: "JetSet - Tourism Trends",
       description: "Gaming dashboard modeled after RAWG.io, utilizing a Next.js frontend and railway cloud self hosted .NET 8 backend integrated API calls to deserialize game data, streamlining user interaction with a seamless full-stack architecture.",
-      tech: ["Next.JS", "Tailwind", "Framer Motion"],
+      // tech: ["Next.JS", "Tailwind", "Framer Motion"],
+      tech: "Next.JS, Tailwind, Framer-Motion",
       projLink: "https://gamevault-ten.vercel.app/",
       images: "/projects/gamevault/main.png",
       // images: "/projects/arcana/main.png",
@@ -29,7 +32,8 @@ export const projectsData = [
     {
       title: "Arcana Anime News",
       description: "Anime Newspaper events in history",
-      tech: ["Next.JS", "Framer Motion", "Tailwind"],
+      // tech: ["Next.JS", "Framer Motion", "Tailwind"],
+      tech: "Next.JS, Tailwind, Framer-Motion",
       projLink: "https://arcana-newspaper.vercel.app/",
       images: "/projects/arcana/main.png",
       // video: "/projects/arcana/video/a1.mp4",
@@ -38,7 +42,8 @@ export const projectsData = [
     {
       title: "Next Gemini",
       description: "Gemini AI Clone that leverages Clerk Auth and Google's AI to provide memorable AI interactions.",
-      tech: ["NextJS", "Clerk Auth", "SupaBase", "ShadCN", "Tailwind", "Framer Motion"],
+      // tech: ["NextJS", "Clerk Auth", "SupaBase", "ShadCN", "Tailwind", "Framer Motion"],
+      tech: "NextJS, Clerk Auth, SupaBase, ShadCN, Tailwind, Framer Motion",
       projLink: "https://next-gemini.vercel.app/",
       images: "/projects/gemini-next/main.png",
       // images: "/projects/arcana/main.png",
@@ -47,7 +52,8 @@ export const projectsData = [
     {
       title: "Rivals Nba App",
       description: "Basketball enthusiasts platform to wager against friends or RIVALS to prove dominance.",
-      tech: ["Next.JS", "RapidAPI", "Framer Motion", "ShadCN", "Tailwind"],
+      // tech: ["Next.JS", "RapidAPI", "Framer Motion", "ShadCN", "Tailwind"],
+      tech: "Next.JS, RapidAPI, Framer-Motion, ShadCN, Tailwind",
       projLink: "https://next-nba-rivals.vercel.app/",
       images: "/projects/rivals/main.png",
       // images: "/projects/arcana/main.png",
@@ -56,7 +62,8 @@ export const projectsData = [
     {
       title: "Wanderer's Lookbook",
       description: "Design app to show different ways to express one's desires through fashion and travel and the effect of perspective.",
-      tech: ["Next.JS", "Framer Motion", "Tailwind"],
+      // tech: ["Next.JS", "Framer Motion", "Tailwind"],
+      tech: "Next.JS, Tailwind, Framer-Motion",
       projLink: "https://nextjs-lookbook.vercel.app/",
       images: "/projects/lookbook/main.png",
       // images: "/projects/arcana/main.png",
@@ -65,7 +72,8 @@ export const projectsData = [
     {
       title: "Anime Guide",
       description: "Anime Catalog platform that explores the riches of top trending anime titles and their deep stories!",
-      tech: ["TypeScript", "Next.JS", "Framer Motion", "Tailwind", "Server-side Actions"],
+      // tech: ["TypeScript", "Next.JS", "Framer Motion", "Tailwind", "Server-side Actions"],
+      tech: "TypeScript, Next.JS, Framer-Motion, Tailwind, Server-Side Actions",
       projLink: "https://nextjs-anime-ranking.vercel.app/",
       images: "/projects/anime-guide/main.png",
       // images: "/projects/arcana/main.png",
@@ -74,7 +82,8 @@ export const projectsData = [
     {
       title: "JetSet - Tourism Trends",
       description: "JetSet is the go-to web app to catch up on the newest trends with our services to provide a new perspective.",
-      tech: ["Next.JS", "Tailwind", "Framer Motion"],
+      // tech: ["Next.JS", "Tailwind", "Framer Motion"],
+      tech: "Next.JS, Tailwind, Framer-Motion",
       projLink: "https://travel-jet-dribbble.vercel.app/",
       images: "/projects/jetset/main.png",
       // images: "/projects/arcana/main.png",
