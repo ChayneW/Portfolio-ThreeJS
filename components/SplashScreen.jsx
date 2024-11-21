@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react'
 const SplashScreen = () => {
   const [count, setCount] = useState('0%')
   const [isVisible, setIsVisible] = useState(true)
-  const [counterColor, setCounterColor] = useState('#FFFFFF')
+  // const [counterColor, setCounterColor] = useState('#FFFFFF')
 
   useEffect(() => {
     const totalDuration = 3000; // Total duration of the loading in milliseconds
@@ -33,13 +33,13 @@ const SplashScreen = () => {
 
       setCount(`${Math.floor(currentValue)}%`);
 
-      if (elapsedTime >= colorChangeInterval) {
-        if (elapsedTime < 2 * colorChangeInterval) {
-          setCounterColor('#009B3A');
-        } else {
-          setCounterColor('#FFB81C');
-        }
-      }
+      // if (elapsedTime >= colorChangeInterval) {
+      //   if (elapsedTime < 2 * colorChangeInterval) {
+      //     setCounterColor('#009B3A');
+      //   } else {
+      //     setCounterColor('#FFB81C');
+      //   }
+      // }
 
       setTimeout(updateCounter, updateInterval);
     }
@@ -64,7 +64,10 @@ const SplashScreen = () => {
             width={320}
             alt='banner'
           />
-          <div className='counter text-4xl font-bold mb-4 py-10' style={{ color: counterColor }}>{count}</div>
+          {/* <div className='counter text-4xl font-bold mb-4 py-10' style={{ color: counterColor }}>{count}</div> */}
+          <div className='counter text-4xl font-bold mb-4 py-10'>
+            {count}
+          </div>
           <div className='site-teaser mb-4'>
             <span className='block'>Enjoy the Experience!</span>
           </div>

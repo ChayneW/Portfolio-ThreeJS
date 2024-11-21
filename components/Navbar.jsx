@@ -53,9 +53,11 @@ const Navbar = () => {
           {/* <div className={`max-lg:hidden lg:fixed top-0 z-20 w-full text-white transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}> */}
             <div className='flex justify-between p-2 px-5 py-5'>
               <div className="flex self-center">
-                <div>
-                  <CircleText size={70} textSize={14} textContent=" ✦ Chayne.Dev ✦ Chayne.Dev ✦" />
-                </div>
+                <Link href={"/"}>
+                  <div>
+                    <CircleText size={70} textSize={14} textContent=" ✦ Chayne.Dev ✦ Chayne.Dev ✦" />
+                  </div>
+                </Link>
               </div>
 
               <div className='flex justify-around gap-5 items-center'>

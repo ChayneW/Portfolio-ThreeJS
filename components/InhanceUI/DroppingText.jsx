@@ -9,7 +9,7 @@ export const RevealLinks = () => {
       <FlipLink href="https://github.com/ChayneW">Github</FlipLink>
       <FlipLink href="https://twitter.com/CswAutomation">Twitter</FlipLink>
       <FlipLink href="https://www.linkedin.com/in/chayne-s-white/">Linkedin</FlipLink>
-      <FlipLink href="#">Instagram</FlipLink>
+      <FlipLink href="https://www.instagram.com/automoto.csw/">Instagram</FlipLink>
     </section>
   );
 };
