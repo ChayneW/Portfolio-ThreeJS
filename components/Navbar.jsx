@@ -52,23 +52,7 @@ const Navbar = () => {
           <div className={`max-lg:hidden lg:fixed top-0 w-full text-white transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
           {/* <div className={`max-lg:hidden lg:fixed top-0 z-20 w-full text-white transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}> */}
             <div className='flex justify-between p-2 px-5 py-5'>
-              {/* <div className='flex self-center'>
-                <Link href={'/'}>
-                  <Image
-                    width={100}
-                    height={100}
-                    src="https://res.cloudinary.com/db8opthjz/image/upload/v1703042739/chaynedev-high-logo-transparent_aescxi.png"
-                    // src={'/notch-fix-3-color-speak.png'}
-                    // src="/notch-fix.png"
-                    alt='Toggle Menu'
-                  />
-                </Link>
-              </div> */}
               <div className="flex self-center">
-                {/* <div 
-                  style={{ width: "30px", height: "30px"}}>
-                  <CircleText />
-                </div> */}
                 <div>
                   <CircleText size={70} textSize={14} textContent=" ✦ Chayne.Dev ✦ Chayne.Dev ✦" />
                 </div>
@@ -91,15 +75,6 @@ const Navbar = () => {
           >
             <div className='flex justify-between py-2 px-5'>
               <div className='flex self-center'>
-                {/* <Link href={'/'}>
-                  <Image
-                    width={60}
-                    height={60}
-                    src="https://res.cloudinary.com/db8opthjz/image/upload/v1703042739/chaynedev-high-logo-transparent_aescxi.png"
-                    // src={'/notch-fix-3-color-speak.png'}
-                    alt='Toggle Menu'
-                  />
-                </Link> */}
                 <div>
                   <CircleText size={70} textSize={14} textContent=" ✦ Chayne.Dev ✦ Chayne.Dev ✦" />
                 </div>

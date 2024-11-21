@@ -30,30 +30,6 @@ export const Card = React.memo(({
         className="object-cover absolute inset-0"
         priority 
       />
-      {/* <video 
-        // ref={videoRef}
-        className="object-cover absolute inset-0"
-        autoPlay 
-        muted
-        preload='auto' 
-        playsInline
-        loop
-        src={card.video}
-        // onError={handleVideoError}
-      >
-        <source src={card.video} type="video/mp4" />
-        Your Browser doesn&apos;t support Video Tag.
-      </video> */}
-
-
-      {/* Adjusted div for overlay behavior on small screens */}
-      {/* <div
-        className={cn(
-          "absolute inset-0 flex items-end py-8 px-4 transition-opacity duration-300",
-          "bg-black/60 md:bg-black/50",  // Lighter overlay on mobile, darker on larger screens
-          hovered === index ? "opacity-100" : "md:opacity-0 max-sm:opacity-60"  // Hover reveals text on larger screens, keeps text on mobile
-        )}
-      > */}
 
       <div
         className={cn(
@@ -62,12 +38,6 @@ export const Card = React.memo(({
           hovered === index ? "opacity-100" : "md:opacity-0" // Hover reveals overlay on larger screens
         )}
       >
-          
-      {/* <div
-        className={cn(
-          "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",
-          hovered === index ? "opacity-100" : "opacity-0"
-        )}> */}
 
         <div
           // className="text-base sm:text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">

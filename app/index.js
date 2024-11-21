@@ -20,10 +20,10 @@ export const projectsData = [
       video: "/jetset/video/",
     },
     {
-      title: "JetSet - Tourism Trends",
+      title: "Game Vault",
       description: "Gaming dashboard modeled after RAWG.io, utilizing a Next.js frontend and railway cloud self hosted .NET 8 backend integrated API calls to deserialize game data, streamlining user interaction with a seamless full-stack architecture.",
       // tech: ["Next.JS", "Tailwind", "Framer Motion"],
-      tech: "Next.JS, Tailwind, Framer-Motion",
+      tech: "C#, Next.JS, .NET 8, Tailwind, Framer-Motion",
       projLink: "https://gamevault-ten.vercel.app/",
       images: "/projects/gamevault/main.png",
       // images: "/projects/arcana/main.png",
