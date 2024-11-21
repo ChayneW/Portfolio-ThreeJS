@@ -5,7 +5,7 @@ import { SmoothScrollHero } from './InhanceUI/TomSmoothScroll'
 
 const About = () => {
   return (
-    <section className=''>
+    <section className='' id="About">
       {/* <div className='absolute bottom-0'> */}
       <div className=''>
         <SmoothScrollHero/>

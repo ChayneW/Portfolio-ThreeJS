@@ -16,6 +16,7 @@ const Projects = () => {
         <MotionElement
             as="div"
             className='py-20'
+            id="Projects"
         >
         {/* // <div className='py-20'> */}
         {/* <ProjectFocusCards/> */}

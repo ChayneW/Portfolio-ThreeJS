@@ -5,15 +5,18 @@ import { RevealBento } from './InhanceUI/Bento'
 
 const Contact = () => {
   return (
-    <div className=''>
-        <div className='relative'>
-          
-          <div>
-            <RevealBento/>
-          </div>
-
+    <div 
+      id="Contact"
+      className=''
+    >
+      <div className='relative'>
+        
+        <div>
+          <RevealBento/>
         </div>
+
       </div>
+    </div>
   )
 }
 

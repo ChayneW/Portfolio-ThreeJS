@@ -124,7 +124,7 @@ const HeaderBlock = () => (
       </span>
     </h1>
     <a
-      href="#"
+      href="mailto:example@domain.com"
       className="flex items-center gap-1 text-red-300 hover:underline"
     >
       Contact me <FiArrowRight />
