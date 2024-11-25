@@ -26,11 +26,12 @@ const BackVid = () => {
     
     const handleVideoEnd = () => {
         console.log(`inside handleVideoEnd, current is ${currentVideoIndex}`);
-        // setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % heroVids.length);
-        // console.log(`switching to next video: ${currentVideoIndex}`)
-        const nextIndex = (currentVideoIndex + 1) % heroVids.length;
-        preloadVideo(nextIndex); // Preload next video
-        setCurrentVideoIndex(nextIndex);
+        setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % heroVids.length);
+        console.log(`switching to next video: ${currentVideoIndex}`)
+        
+        // const nextIndex = (currentVideoIndex + 1) % heroVids.length;
+        // preloadVideo(nextIndex); // Preload next video
+        // setCurrentVideoIndex(nextIndex);
     }
 
     const handleVideoError = () => {

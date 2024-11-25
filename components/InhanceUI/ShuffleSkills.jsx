@@ -135,7 +135,7 @@ const squareData = [
     src: "/skill-folder/firebase.png",
   },
 ];
-console.log(squareData)
+// console.log(squareData)
 
 const generateSquares = () => {
   // const squareData = generateSquareData()
