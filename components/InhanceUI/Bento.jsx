@@ -51,19 +51,55 @@ export const RevealBento = () => {
     </div>
   </div> */}
 
-  <div className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4">
+  {/* <div className="mx-auto grid grid-cols-2 gap-4 w-full">
     <HeaderBlock />
-    <div className="max-md:hidden md:block">
+    <div className="max-lg:hidden lg:block">
       <My3DCanvas /> 
     </div>
+    <div className="max-lg:block lg:hidden">
+      <div className="relative h-[300px] w-[350px]">
+
+        <Image
+          src="/photos/michael-demarco-original.jpg"
+          fill
+          style={{objectFit: "cover"}}
+        />
+      </div>
+    </div>
     <AboutBlock />
+  </div> */}
+
+  <div className="mx-auto grid w-full">
+    <div className="grid lg:grid-cols-2 gap-4 w-full px-5">
+      <div>
+        <HeaderBlock/>
+      </div>
+
+      <div>
+        <div className="max-md:hidden md:block">
+          <My3DCanvas /> 
+        </div>
+
+        <div className="max-md:block md:hidden py-10">
+          <div className="relative h-[300px] w-[100%]">
+            <Image
+              className="rounded-lg"
+              src="/photos/michael-demarco-original.jpg"
+              fill
+              style={{objectFit: "cover"}}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="md:pt-20 px-5">
+      <AboutBlock/>
+    </div>
   </div>
 
+   
   <div className="py-20 w-full grid justify-center">
-    {/* <div 
-      style={{ width: "200px", height: "200px"}}>
-      <CircleText />
-    </div> */}
     <div className="py-10">
       <CircleText size={200} textSize={14} textContent="Chayne.Dev ✦ Chayne.Dev ✦" />
     </div>
@@ -104,7 +140,7 @@ const Block = ({ className, ...rest }) => {
 };
 
 const HeaderBlock = () => (
-  <Block className="col-span-12 row-span-2 md:col-span-6">
+  <Block className="col-span-12 row-span-2 md:col-span-6 lg:h-[90%]">
     {/* <img
       src="https://api.dicebear.com/8.x/lorelei-neutral/svg?seed=John"
       alt="avatar"
@@ -124,7 +160,7 @@ const HeaderBlock = () => (
       </span>
     </h1>
     <a
-      href="mailto:chaynesinghwhite@gmail.com?subject=Hello&body=How are you?"
+      href="mailto:chaynesinghwhite@gmail.com?subject=Hello&body=Loving the style?"
       className="flex items-center gap-1 text-red-300 hover:underline"
     >
       Contact me <FiArrowRight />
