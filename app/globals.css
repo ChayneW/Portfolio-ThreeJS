@@ -251,3 +251,9 @@
   font-size: 1.2em;
   transform-origin: 0 100px;
 } */
+
+/*#############*/
+
+.vid-container video {
+  transition: opacity 0.5s ease-in-out;
+}
