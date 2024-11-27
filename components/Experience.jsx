@@ -6,7 +6,6 @@ import { VelocityText } from './InhanceUI/TextSide'
 import { FlipLink, PageDroppingText } from './InhanceUI/DroppingText'
 import MotionElement from './InhanceUI/MotionElement'
 import { TypewriterEffectSmoothDemo } from './InhanceUI/TypeWriter'
-// import { TypewriterEffectDemo } from './InhanceUI/TypeWriterEffect'
 
 // https://kevinhilgendorf.com
 
@@ -18,12 +17,8 @@ const Experience = () => {
     >
       <div className='bg-[#e0e0dc] text-white pt-20'>
         <div className='bg-[#e0e0dc]'>
-          {/* <MultiLayerParallax/> */}
           <div className='text-black max-md:px-10 md:px-20'>
             <div>
-              {/* <h1 className='p-10
-                max-md:text-4xl md:max-lg:text-6xl lg:text-8xl'
-              >Experience:</h1> */}
               <MotionElement
                 as="h1"
                 className='p-10
@@ -33,18 +28,6 @@ const Experience = () => {
               </MotionElement>
             </div>
 
-            {/* <div>
-              <p className='max-md:p-10 md:p-20 max-md:text-2xl md:text-4xl'>
-                Translating design into dynamic, functional web experiences is where I thrive. 
-                I&apos;m passionate about transforming design systems into responsive, 
-                web-based environments, leveraging the flexibility of multiple different technologies 
-                to create sustainable websites with flexible and responsive components.
-              </p>
-            </div> */}
-
-            {/* <MotionElement
-              as="div"
-              className='grid py-10 gap-10'>  */}
             <div className='grid max-md:py-20 md:py-32 gap-20'>
               
               <div className='grid border-b md:mx-20 border-b-black'>
@@ -98,20 +81,8 @@ const Experience = () => {
 
                 </div>
               </div>
-
-            {/* </MotionElement> */}
             </div>
-          </div>
-
-          {/* <div className='text-black'>
-            <p className='max-md:p-10 md:p-20 max-md:text-2xl md:text-4xl'>
-              Translating design into dynamic, functional web experiences is where I thrive. 
-              I&apos;m passionate about transforming design systems into responsive, 
-              web-based environments, leveraging the flexibility of multiple different technologies 
-              to create sustainable websites with flexible and responsive components.
-            </p>
-          </div> */}
-          
+          </div>          
           <div className='max-md:hidden md:block'>
             <TypewriterEffectSmoothDemo/>
           </div>

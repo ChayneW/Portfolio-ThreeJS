@@ -186,13 +186,3 @@ const Marquee = () => {
 };
 
 export default Marquee;
-
-{/* <div className="marquee__part">
-  food wine fish beef vegetables
-</div>
-<div className="marquee__part">
-  food wine fish beef vegetables
-</div>
-<div className="marquee__part">
-  food wine fish beef vegetables
-</div> */}

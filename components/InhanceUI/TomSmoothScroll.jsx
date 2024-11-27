@@ -221,11 +221,6 @@ const Schedule = () => {
         >
           <div className="grid max-lg:order-last frontend-text items-center justify-between text-xl">
             <BubbleText/>
-            {/* <h2>Hello, My name is Chayne and I&apos;m a Python/Web Developer from South Florida.
-              My passion is Web Development and help transform designs from extraordinary minds into real life!
-              I&apos;m dedicated to crafting captivating online experiences that captivate users and elevate brands.
-              Join me on a journey where innovation meets impact.
-            </h2> */}
           </div> 
 
           <div className="grid max-lg:order-first justify-center max-lg:pb-10">
@@ -243,18 +238,7 @@ const Schedule = () => {
             />
           </div> 
         </div>
-
-        {/* <BubbleText/> */}
-
       </motion.div>
-
-      {/* <ScheduleItem title="NG-21" date="Dec 9th" location="Florida" />
-      <ScheduleItem title="Starlink" date="Dec 20th" location="Texas" />
-      <ScheduleItem title="Starlink" date="Jan 13th" location="Florida" />
-      <ScheduleItem title="Turksat 6A" date="Feb 22nd" location="Florida" />
-      <ScheduleItem title="NROL-186" date="Mar 1st" location="California" />
-      <ScheduleItem title="GOES-U" date="Mar 8th" location="California" />
-      <ScheduleItem title="ASTRA 1P" date="Apr 8th" location="Texas" /> */}
     </section>
   );
 };

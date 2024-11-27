@@ -2,8 +2,7 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import CircleText from './InhanceUI/CircleText'
-// import { SparklesCore } from './ui/Sparkles'
-// import { Vortex } from './ui/Vortex'
+
 
 const SplashScreen = () => {
   const [count, setCount] = useState('0%')
@@ -33,15 +32,6 @@ const SplashScreen = () => {
       }
 
       setCount(`${Math.floor(currentValue)}%`);
-
-      // if (elapsedTime >= colorChangeInterval) {
-      //   if (elapsedTime < 2 * colorChangeInterval) {
-      //     setCounterColor('#009B3A');
-      //   } else {
-      //     setCounterColor('#FFB81C');
-      //   }
-      // }
-
       setTimeout(updateCounter, updateInterval);
     }
 
@@ -55,16 +45,6 @@ const SplashScreen = () => {
   return (
     <main className="fixed inset-0 z-50 flex items-center justify-center bg-black text-white"> 
         <div className='loader flex flex-col items-center justify-center text-center'>
-          {/* <Image
-            id='logo'
-            // src={'/notch-fix-3-color-speak.png'}
-            src='/logo-white.png'
-            // src="/notch-fix.png"
-            priority
-            height={300}
-            width={320}
-            alt='banner'
-          /> */}
           <div className="py-10">
             <CircleText size={200} textSize={14} textContent="Chayne.Dev ✦ Chayne.Dev ✦" />
           </div>

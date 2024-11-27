@@ -46,11 +46,9 @@ const Navbar = () => {
       }}
     >
       <nav className='w-full mx-auto'>
-        {/* <div className='px-10'> */}
 
           {/* Navbar for screen sizes lg and above */}
           <div className={`max-lg:hidden lg:fixed top-0 w-full text-white transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
-          {/* <div className={`max-lg:hidden lg:fixed top-0 z-20 w-full text-white transition-colors duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}> */}
             <div className='flex justify-between p-2 px-5 py-5'>
               <div className="flex self-center">
                 <Link href={"/"}>
@@ -70,7 +68,6 @@ const Navbar = () => {
           
           {/* Navbar for screen sizes max-lg */}
           <motion.div
-            // className={`max-lg:fixed lg:hidden top-0 z-20 w-full text-white transition-colors duration-300 ${isScrolled ? 'bg-emerald-600' : 'bg-transparent'}`}
             className={`max-lg:fixed lg:hidden top-0 z-20 w-full text-white transition-colors duration-300 ${isOpen || isScrolled ? 'bg-black' : 'bg-transparent'}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

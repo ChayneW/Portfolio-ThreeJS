@@ -11,64 +11,7 @@ import CircleText from "./CircleText";
 
 export const RevealBento = () => {
   return (
-    // <div className="min-h-screen px-4 py-12 text-zinc-50">
-    //   <Logo />
-    //   <div
-    //     initial="initial"
-    //     animate="animate"
-    //     transition={{
-    //       staggerChildren: 0.05,
-    //     }}
-    //     className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4"
-    //   >
-    //     <HeaderBlock />
-    //     <SocialsBlock />
-    //     <AboutBlock />
-    //   </div>
-    //   <Footer />
-    // </div>
-
-    // <div className="min-h-screen px-4 py-12 text-zinc-50">
-    //   <Logo />
-    //   <div className="relative mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4">
-    //     <HeaderBlock />
-    //     <div className="flex justify-center px-auto w-[400px] h-[500px]">
-    //       <My3DCanvas /> {/* Replacing SocialsBlock with 3D Canvas */}
-    //     </div>
-    //     <AboutBlock />
-    //   </div>
-    //   <Footer />
-    // </div>
-
  <div className="min-h-screen px-4 py-12 text-zinc-50 grid lg:flex lg:flex-col items-center">
-  {/* <Logo /> */}
-  {/* <CircleText/>*/}
-
-  {/* <div className="py-10 w-full grid justify-center">
-    <div 
-      style={{ width: "200px", height: "200px"}}>
-      <CircleText />
-    </div>
-  </div> */}
-
-  {/* <div className="mx-auto grid grid-cols-2 gap-4 w-full">
-    <HeaderBlock />
-    <div className="max-lg:hidden lg:block">
-      <My3DCanvas /> 
-    </div>
-    <div className="max-lg:block lg:hidden">
-      <div className="relative h-[300px] w-[350px]">
-
-        <Image
-          src="/photos/michael-demarco-original.jpg"
-          fill
-          style={{objectFit: "cover"}}
-        />
-      </div>
-    </div>
-    <AboutBlock />
-  </div> */}
-
   <div className="mx-auto grid w-full">
     <div className="grid lg:grid-cols-2 gap-4 w-full px-5">
       <div className="">
@@ -142,12 +85,6 @@ const Block = ({ className, ...rest }) => {
 
 const HeaderBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6 lg:h-[90%]">
-    {/* <img
-      src="https://api.dicebear.com/8.x/lorelei-neutral/svg?seed=John"
-      alt="avatar"
-      className="mb-4 size-14 rounded-full"
-    /> */}
-
     <Image
       className="mb-4 size-14 rounded-full"
       src={"/photos/logo/profile-pic.jpg"}
@@ -235,7 +172,7 @@ const AboutBlock = () => (
     <p>
       My passion is building cool stuff.{" "}
       <span className="text-zinc-400">
-        I build primarily with React, Tailwind CSS, and Framer Motion. I love
+        Whether building with React, .NET, Tailwind CSS, and Framer Motion. I love
         this stack so much that I even built a website about it.
       </span>
     </p>
@@ -304,17 +241,4 @@ const Logo = () => {
     </svg>
   );
 };
-
-const Footer = () => {
-  return (
-    <footer className="mt-12">
-      {/* <p className="text-center text-zinc-400">
-        <a href="#" className="text-red-300 hover:underline">
-          @tomisloading
-        </a>
-      </p> */}
-    </footer>
-  );
-};
-
 
