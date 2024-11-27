@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
+import CircleText from './InhanceUI/CircleText'
 // import { SparklesCore } from './ui/Sparkles'
 // import { Vortex } from './ui/Vortex'
 
@@ -54,7 +55,7 @@ const SplashScreen = () => {
   return (
     <main className="fixed inset-0 z-50 flex items-center justify-center bg-black text-white"> 
         <div className='loader flex flex-col items-center justify-center text-center'>
-          <Image
+          {/* <Image
             id='logo'
             // src={'/notch-fix-3-color-speak.png'}
             src='/logo-white.png'
@@ -63,7 +64,10 @@ const SplashScreen = () => {
             height={300}
             width={320}
             alt='banner'
-          />
+          /> */}
+          <div className="py-10">
+            <CircleText size={200} textSize={14} textContent="Chayne.Dev ✦ Chayne.Dev ✦" />
+          </div>
           {/* <div className='counter text-4xl font-bold mb-4 py-10' style={{ color: counterColor }}>{count}</div> */}
           <div className='counter text-4xl font-bold mb-4 py-10'>
             {count}

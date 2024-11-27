@@ -75,7 +75,7 @@ export const RevealBento = () => {
         <HeaderBlock/>
       </div>
 
-      {/* <div>
+      <div>
         <div className="max-md:hidden md:block">
           <My3DCanvas /> 
         </div>
@@ -90,7 +90,7 @@ export const RevealBento = () => {
             />
           </div>
         </div>
-      </div> */}
+      </div>
 
     </div>
 
