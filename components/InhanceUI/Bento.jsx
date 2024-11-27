@@ -71,11 +71,11 @@ export const RevealBento = () => {
 
   <div className="mx-auto grid w-full">
     <div className="grid lg:grid-cols-2 gap-4 w-full px-5">
-      <div>
+      <div className="">
         <HeaderBlock/>
       </div>
 
-      <div>
+      {/* <div>
         <div className="max-md:hidden md:block">
           <My3DCanvas /> 
         </div>
@@ -90,7 +90,8 @@ export const RevealBento = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
+
     </div>
 
     <div className="md:pt-20 px-5">
