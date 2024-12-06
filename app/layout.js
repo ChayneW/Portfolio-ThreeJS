@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react"
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SplashScreen from "@/components/SplashScreen";
+import { Analytics } from "@vercel/analytics/react"
 
 
 export const metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <SplashScreen/>
         <Navbar/>
         {children}
+        <Analytics />
         <Footer/>
       </body>
     </html>
