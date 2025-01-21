@@ -57,7 +57,7 @@ const Experience = () => {
                   </div>
 
                   <div className='lg:text-end self-center'>
-                    <h1>April 2024 - June 2024</h1>
+                    <h1>June 2024 - August 2024</h1>
                     <h1>Remote</h1>
                   </div>
 
@@ -75,7 +75,7 @@ const Experience = () => {
                   </div>
 
                   <div className='lg:text-end self-center'>
-                    <h1>March 2024 - April 2024</h1>
+                    <h1>February 2024 - May 2024</h1>
                     <h1>Hybrid</h1>
                   </div>
 
