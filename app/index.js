@@ -60,6 +60,16 @@ export const projectsData = [
     //   video: "/gemini-next/video/",
     // },
     {
+      title: "JetSet - Tourism Trends",
+      description: "JetSet is the go-to web app to catch up on the newest trends with our services to provide a new perspective.",
+      // tech: ["Next.JS", "Tailwind", "Framer Motion"],
+      tech: "Next.JS, Tailwind, Framer-Motion",
+      projLink: "https://travel-jet-dribbble.vercel.app/",
+      images: "/projects/jetset/main.png",
+      // images: "/projects/arcana/main.png",
+      video: "/jetset/video/",
+    },
+    {
       title: "Rivals Nba App",
       description: "Basketball enthusiasts platform to wager against friends or RIVALS to prove dominance.",
       // tech: ["Next.JS", "RapidAPI", "Framer Motion", "ShadCN", "Tailwind"],
@@ -88,16 +98,6 @@ export const projectsData = [
       images: "/projects/anime-guide/main.png",
       // images: "/projects/arcana/main.png",
       video: "/projects/anime-guide/video/",
-    },
-    {
-      title: "JetSet - Tourism Trends",
-      description: "JetSet is the go-to web app to catch up on the newest trends with our services to provide a new perspective.",
-      // tech: ["Next.JS", "Tailwind", "Framer Motion"],
-      tech: "Next.JS, Tailwind, Framer-Motion",
-      projLink: "https://travel-jet-dribbble.vercel.app/",
-      images: "/projects/jetset/main.png",
-      // images: "/projects/arcana/main.png",
-      video: "/jetset/video/",
     },
   ];
   
