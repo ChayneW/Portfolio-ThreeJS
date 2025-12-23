@@ -1,9 +1,9 @@
 export const projectsData = [
     {
       title: "Awaken Scroll",
-      description: "ebsite is a space for connection through visual expression—a place where design, storytelling, and motion come together to inspire creation",
+      description: "A space for connection through visual expression—a place where design, storytelling, and motion come together to inspire creation",
       // tech: ["Next.JS", "Tailwind", "Framer Motion", "GSAP"],
-      tech: "Vite, CSS, GSAP, Lenis, Vercel",
+      tech: "Vite, CSS, JavaScript, GSAP, Lenis, Vercel",
       projLink: "https://scroll-awaken.vercel.app/",
       images: "/projects/awaken-scroll/main.png",
       // images: "/projects/arcana/main.png",
