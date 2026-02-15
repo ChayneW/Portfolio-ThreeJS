@@ -39,7 +39,7 @@ import {
             style={{ skewX, x }}
             className="origin-bottom-left whitespace-nowrap text-5xl font-black uppercase leading-[0.85] md:text-7xl md:leading-[0.85]"
           >
-            With continuous persistence, leads to one less step towards one's goal! With continuous persistence, leads to one less step towards one's goal!
+            With continuous persistence, leads to one less step towards one's goal!
           </motion.p>
         </div>
       </section>
